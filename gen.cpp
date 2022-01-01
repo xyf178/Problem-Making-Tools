@@ -8,7 +8,10 @@ using namespace std;
 #define int long long
 string name;
 mt19937_64 rnd(time(0));
-#define rand(l,r) (rnd()%((r)-(l)+1)+(l))
+int rdbt(int l,int r){
+    return (rnd()%((r)-(l)+1)+(l));
+}
+#define rand rdbt
 ofstream yml;
 void fast(){
 	ios::sync_with_stdio(0);
